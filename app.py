@@ -31,17 +31,17 @@ def predict_datapoint():
             Arrival_Hour=request.form.get('Arrival_Hour'),
             Arrival_Min=request.form.get('Arrival_Min'),
             Airline_Air_Asia=request.form.get('Airline_Air_Asia'),
-            Airline_Air_India=request.form.get('Airline_Air India'),
+            Airline_Air_India=request.form.get('Airline_Air_India'),
             Airline_GoAir=request.form.get('Airline_GoAir'),
             Airline_IndiGo=request.form.get('Airline_IndiGo'),
-            Airline_Jet_Airways=request.form.get('Airline_Jet Airways'),
-            Airline_Jet_Airways_Business=request.form.get('Airline_Jet Airways Business'),
-            Airline_Multiple_carriers=request.form.get('Airline_Multiple carriers'),
-            Airline_Multiple_carriers_Premium_economy=request.form.get('Airline_Multiple carriers Premium economy'),
+            Airline_Jet_Airways=request.form.get('Airline_Jet_Airways'),
+            Airline_Jet_Airways_Business=request.form.get('Airline_Jet_Airways_Business'),
+            Airline_Multiple_carriers=request.form.get('Airline_Multiple_carriers'),
+            Airline_Multiple_carriers_Premium_economy=request.form.get('Airline_Multiple_carriers_Premium_economy'),
             Airline_SpiceJet=request.form.get('Airline_SpiceJet'),
             Airline_Trujet=request.form.get('Airline_Trujet'),
             Airline_Vistara=request.form.get('Airline_Vistara'),
-            Airline_Vistara_Premium_economy=request.form.get('Airline_Vistara Premium economy'),
+            Airline_Vistara_Premium_economy=request.form.get('Airline_Vistara_Premium_economy'),
             Source_Banglore=request.form.get('Source_Banglore'),
             Source_Chennai=request.form.get('Source_Chennai'),
             Source_Delhi=request.form.get('Source_Delhi'),
@@ -69,4 +69,3 @@ def predict_datapoint():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
-

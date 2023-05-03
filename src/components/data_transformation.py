@@ -28,9 +28,9 @@ class DataTransformation:
         
         '''
         try:
-            numerical_columns =  ['Duration_Total_Hour', 'Airline_Jet Airways', 'day_of_journey', 'month_of_journey','Airline_Jet Airways Business', 'Airline_Multiple carriers', 
-                                  'Airline_Air India','Destination_Delhi', 'Dep_Min', 'Arrival_Hour',
-                                  'Dep_Hour', 'Arrival_Min', 'Destination_New Delhi','Destination_Hyderabad', 'Source_Mumbai',
+            numerical_columns =  ['Duration_Total_Hour', 'Airline_Jet_Airways', 'day_of_journey', 'month_of_journey','Airline_Jet_Airways_Business', 'Airline_Multiple_carriers', 
+                                  'Airline_Air_India','Destination_Delhi', 'Dep_Min', 'Arrival_Hour',
+                                  'Dep_Hour', 'Arrival_Min', 'Destination_New_Delhi','Destination_Hyderabad', 'Source_Mumbai',
                                   'Airline_IndiGo', 'Source_Banglore', 'Destination_Cochin','Source_Delhi']
             categorical_columns = ['Total_Stops'
                 
@@ -85,9 +85,9 @@ class DataTransformation:
             preprocessing_obj=self.get_data_transformer_object()
 
             target_column_name="Price"
-            numerical_columns =  ['Duration_Total_Hour', 'Airline_Jet Airways', 'day_of_journey', 'month_of_journey','Airline_Jet Airways Business', 'Airline_Multiple carriers', 
-                                  'Airline_Air India','Destination_Delhi', 'Dep_Min', 'Arrival_Hour',
-                                  'Dep_Hour', 'Arrival_Min', 'Destination_New Delhi','Destination_Hyderabad', 'Source_Mumbai',
+            numerical_columns =  ['Duration_Total_Hour', 'Airline_Jet_Airways', 'day_of_journey', 'month_of_journey','Airline_Jet_Airways_Business', 'Airline_Multiple_carriers', 
+                                  'Airline_Air_India','Destination_Delhi', 'Dep_Min', 'Arrival_Hour',
+                                  'Dep_Hour', 'Arrival_Min', 'Destination_New_Delhi','Destination_Hyderabad', 'Source_Mumbai',
                                   'Airline_IndiGo', 'Source_Banglore', 'Destination_Cochin','Source_Delhi']
             input_feature_train_df=train_df.drop(columns=[target_column_name],axis=1)
             target_feature_train_df=train_df[target_column_name]
