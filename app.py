@@ -1,7 +1,12 @@
 from flask import Flask, request, render_template
+import sys
+import os
 import numpy as np
 import pandas as pd
-
+sys.path.append('src')
+sys.path.append("src\components")
+from exception import CustomException
+from logger import logging
 from sklearn.preprocessing import StandardScaler
 from src.pipeline.predict_pipeline import CustomData, PredictPipeline
 
@@ -20,8 +25,6 @@ def predict_datapoint():
         return render_template('home.html')
     else:
         data = CustomData(
-            Source=request.form.get('Source'),
-            Destination=request.form.get('Destination'),
             Total_Stops=request.form.get('Total_Stops'),
             day_of_journey=request.form.get('day_of_journey'),
             month_of_journey=request.form.get('month_of_journey'),
@@ -53,7 +56,8 @@ def predict_datapoint():
             Destination_Hyderabad=request.form.get('Destination_Hyderabad'),
             Destination_Kolkata=request.form.get('Destination_Kolkata'),
             Destination_New_Delhi=request.form.get('Destination_New Delhi'),
-            Price = 0 # We need to set a default value for Price
+            Price=request.form.get("Price")
+            
         )
 
         pred_df = data.get_data_as_data_frame()
