@@ -32,8 +32,8 @@ jobs:
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
-      - name: Upload Data_storage for deployment jobs
-        uses: actions/upload-Data_storage@v2
+      - name: Upload artifact for deployment jobs
+        uses: actions/upload-artifact@v2
         with:
           name: python-app
           path: |
@@ -49,7 +49,7 @@ jobs:
 
     steps:
       - name: Download Data storage from build job
-        uses: actions/download-Data_storage@v2
+        uses: actions/download-artifact@v2
         with:
           name: python-app
           path: .
