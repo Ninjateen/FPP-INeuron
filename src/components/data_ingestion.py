@@ -18,9 +18,9 @@ from dataclasses import dataclass
 
 @dataclass
 class DataIngestionConfig:
-    train_data_path: str=os.path.join("Data storage",'train.csv')
-    test_data_path: str=os.path.join("Data storage",'test.csv')
-    raw_data_path: str=os.path.join("Data storage",'data.csv')
+    train_data_path: str=os.path.join("Data_storage",'train.csv')
+    test_data_path: str=os.path.join("Data_storage",'test.csv')
+    raw_data_path: str=os.path.join("Data_storage",'data.csv')
     
 
 class DatIngestion:

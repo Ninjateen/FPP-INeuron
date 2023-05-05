@@ -5,4 +5,5 @@ matplotlib
 scikit-learn
 xgboost
 Flask
+dill==0.3.4
 #-e .

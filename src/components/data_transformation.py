@@ -16,7 +16,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('Data storage',"preprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join('Data_storage',"preprocessor.pkl")
 
 class DataTransformation:
     def __init__(self):
