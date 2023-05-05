@@ -45,7 +45,7 @@ jobs:
 
     steps:
       - name: Download Data storage from build job
-        uses: actions/download-artifact@v2.2.1
+        uses: actions/download-artifact@v2
         with:
           name: python-app
           path: .
